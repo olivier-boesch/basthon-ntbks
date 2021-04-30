@@ -3,7 +3,7 @@ function load_js_file(js_file) {
     script.src = js_file;
     script.type = 'text/javascript';
     script.crossOrigin = "anonymous";
-    document.getElementsByTagName('head')[0].appendChild(script);
+    print(script.outerHTML);
 }
 
 function load_md(url){
