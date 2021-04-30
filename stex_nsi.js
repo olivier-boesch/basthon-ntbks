@@ -33,15 +33,21 @@ function load_md(md_file){
     });
 }
 
-function load_py(py_file){
-    var py_url = base_url_for_nsi() + py_file
-    var basthon_url = "https://console.basthon.fr/?from=" + py_url;
-    document.write("<iframe src=\"" + basthon_url + "\"></iframe>");
+function load_basthon(type, doc_file,height, width = '100%'){
+    var doc_url = base_url_for_nsi() + doc_file
+    var basthon_url = "https://"+ type +".basthon.fr/?from=" + doc_url;
+    var frame = document.createElement('iframe');
+    frame.src = basthon_url;
+    frame.width = width;
+    frame.height = height;
+    document.writeln(frame.outerHTML);
 }
 
-function load_notebook(ntbk_file){
-    var ntbk_url = base_url_for_nsi() +ntbk_file
-    var basthon_url = "https://notebook.basthon.fr/?from=" + ntbk_url;
-    document.write("<iframe src=\"" + basthon_url + "\"></iframe>");
+function load_py(py_file, height, width='100%'){
+    load_basthon('console', py_file, height, width);
+}
+
+function load_notebook(ntbk_file, height, width='100%'){
+    load_basthon('notebook', ntbk_file, height, width);
 }
 
