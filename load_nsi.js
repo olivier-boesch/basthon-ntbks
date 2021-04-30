@@ -36,12 +36,12 @@ function load_md(md_file){
 function load_py(py_file){
     var py_url = base_url_for_nsi() + py_file
     var basthon_url = "https://console.basthon.fr/?from=" + py_url;
-    print("<iframe src=\"" + basthon_url + "\"></iframe>");
+    document.write("<iframe src=\"" + basthon_url + "\"></iframe>");
 }
 
 function load_notebook(ntbk_file){
     var ntbk_url = base_url_for_nsi() +ntbk_file
     var basthon_url = "https://notebook.basthon.fr/?from=" + ntbk_url;
-    print("<iframe src=\"" + basthon_url + "\"></iframe>");
+    document.write("<iframe src=\"" + basthon_url + "\"></iframe>");
 }
 
