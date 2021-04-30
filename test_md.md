@@ -1,6 +1,9 @@
 # Header style
 
-$$m = a \times b$$
-
 * bullet style
 * bullet too
+
+## Header two
+
+1. lkjlkj
+1. hkjhkjh
