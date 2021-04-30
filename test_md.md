@@ -5,9 +5,15 @@
 ### Rappel
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HJuQVd_aMkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sBMSL9vOqAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B5lvblUBD4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 ### Période (et motif)
 
