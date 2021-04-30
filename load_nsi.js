@@ -11,7 +11,7 @@ function load_md(url){
     load_js_file("https://cdn.jsdelivr.net/npm/marked/marked.min.js");
     var container = "content_md_" + Math.floor(Math.random() * 1000);
     print("<div id=\"" + container + "\"> & nbsp;</div>");
-    $.get('https://raw.githubusercontent.com/olivier-boesch/nsi-md/main/test_md.md', // url
+    $.get(url, // url
         function (data, textStatus, jqXHR) {  // success callback
         document.getElementById(container).innerHTML = marked(data);
     });
