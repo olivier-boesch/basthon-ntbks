@@ -8,8 +8,8 @@ function load_js_file(js_file) {
 
 function load_md(url){
     load_js_file('https://code.jquery.com/jquery-3.4.1.min.js');
-    load_js_file("https://cdn.jsdelivr.net/npm/marked/marked.min.js")
-    print("<div id=\"content_md\">&nbsp;</div>";)
+    load_js_file("https://cdn.jsdelivr.net/npm/marked/marked.min.js");
+    print("<div id=\"content_md\">&nbsp;</div>");
     $.get('https://raw.githubusercontent.com/olivier-boesch/nsi-md/main/test_md.md', // url
         function (data, textStatus, jqXHR) {  // success callback
         document.getElementById('content_md').innerHTML = marked(data);
