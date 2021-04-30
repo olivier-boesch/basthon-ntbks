@@ -7,8 +7,6 @@ function load_js_file(js_file) {
 }
 
 function load_md(url){
-    load_js_file('https://code.jquery.com/jquery-3.4.1.min.js');
-    load_js_file("https://cdn.jsdelivr.net/npm/marked/marked.min.js");
     var container = "content_md_" + Math.floor(Math.random() * 1000);
     print("<div id=\"" + container + "\"> & nbsp;</div>");
     $.get(url, // url
