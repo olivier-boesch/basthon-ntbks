@@ -21,14 +21,15 @@ function base_url_for_nsi(){
 
 function load_md(md_file){
     var md_url = base_url_for_nsi() + md_file
-    var container = "content_md_" + Math.floor(Math.random() * 1000);
+    var container_name = "content_md_" + Math.floor(Math.random() * 1000);
     console.log("container is " + container);
-    print("<div id=\"" + container + "\"> & nbsp;</div>");
+    var container = document.createElement('div');
+    container.id = container_name
     console.log("try to load " + md_url);
-    $.get(md_url, // url
-        function (data, textStatus, jqXHR) {  // success callback
-        console.log("data is" + data)
-        document.getElementById(container).innerHTML = marked(data);
+    $.get(md_url)
+        .done(function (data) {  // success callback
+              container.innerHTML = marked(data);
+              document.write(container.outerHTML);
     });
 }
 
